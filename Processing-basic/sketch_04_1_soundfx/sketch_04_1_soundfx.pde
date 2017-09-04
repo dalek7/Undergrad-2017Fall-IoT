@@ -1,56 +1,47 @@
 // based on
-// http://code.compartmental.net/minim/audiosample_class_audiosample.html
+// http://freeartbureau.org/fab_activity/processing-for-kids-part-2/
 import ddf.minim.*;
-
+ 
 Minim minim;
-AudioSample kick;
-AudioSample snare;
-
-void setup()
-{
-  size(512, 200, P3D);
-  minim = new Minim(this);
-
-  // load BD.wav from the data folder
-  kick = minim.loadSample(  "Become_Super_Mario.wav",//"se_jump.wav",  // filename
-                            512      // buffer size
-                         );
-                         
-  // An AudioSample will spawn its own audio processing Thread, 
-  // and since audio processing works by generating one buffer 
-  // of samples at a time, we can specify how big we want that
-  // buffer to be in the call to loadSample. 
-  // above, we requested a buffer size of 512 because 
-  // this will make the triggering of the samples sound more responsive.
-  // on some systems, this might be too small and the audio 
-  // will sound corrupted, in that case, you can just increase
-  // the buffer size.
-  
-  // if a file doesn't exist, loadSample will return null
-  if ( kick == null ) println("Didn't get kick!");
-  
-  // load SD.wav from the data folder
-  snare = minim.loadSample("goldgrain.wav", 512);
-  if ( snare == null ) println("Didn't get snare!");
+ 
+AudioSample fx1;
+AudioSample fx2;
+AudioSample fx3;
+ 
+void setup() {
+    size (300, 300);
+    minim = new Minim(this);
+    fx1 = minim.loadSample("se_jump.wav");
+    fx2 = minim.loadSample("Synth_bl-xk-95_hifi.wav");
+    fx3 = minim.loadSample("Synth_bl-xk-90_hifi.wav");
+    rectMode(CENTER);
 }
-
-void draw()
-{
-  background(0);
-  stroke(255);
-  
-  // use the mix buffer to draw the waveforms.
-  for (int i = 0; i < kick.bufferSize() - 1; i++)
-  {
-    float x1 = map(i, 0, kick.bufferSize(), 0, width);
-    float x2 = map(i+1, 0, kick.bufferSize(), 0, width);
-    line(x1, 50 - kick.mix.get(i)*50, x2, 50 - kick.mix.get(i+1)*50);
-    line(x1, 150 - snare.mix.get(i)*50, x2, 150 - snare.mix.get(i+1)*50);
-  }
+ 
+void draw() {
+    background(0);
 }
-
-void keyPressed() 
-{
-  if ( key == '1' ) snare.trigger();
-  if ( key == '2' ) kick.trigger();
+ 
+void keyPressed() {
+    if ( key == 'a' ) {
+            
+        fx1.trigger();
+     }
+    if ( key == 's' ) {
+            
+        fx2.trigger();
+     }
+    if ( key == 'd' ) {
+        
+        fx3.trigger();
+     }
+}
+ 
+void stop() {
+  // always close Minim audio classes when you are done with them
+    fx1.close();
+    fx2.close();
+    fx3.close();
+    
+    minim.stop();
+    super.stop();
 }
