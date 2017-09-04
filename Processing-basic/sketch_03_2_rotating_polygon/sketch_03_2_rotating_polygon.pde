@@ -8,7 +8,7 @@ void draw()
 	background(102);
 	pushMatrix();
   	translate(width*0.5, height*0.5);
-  	rotate(frameCount / 200.0);
+    rotate(frameCount / 50.0); // 50? 200? 
   	polygon(0, 0, 82, 3);  // Triangle
 	popMatrix();
 }
