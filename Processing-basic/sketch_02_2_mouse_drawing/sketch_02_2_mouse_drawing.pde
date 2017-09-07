@@ -1,5 +1,9 @@
+
+int saveCount;
+
 void setup() {
-  size(100, 100);
+  size(500, 500);
+  saveCount = 0;
 }
 
 void draw() {
@@ -8,6 +12,10 @@ void draw() {
 }
 
 void mousePressed() {
-  save("line.jpg");
-  println("saved...");
+  //String filename = "line_" + str(frameCount) + ".jpg";
+  String filename = "line_" + str(saveCount) + ".jpg";
+  
+  saveCount = saveCount + 1;
+  save(filename);
+  println("saved..." + filename);
 }
