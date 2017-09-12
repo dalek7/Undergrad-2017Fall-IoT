@@ -8,7 +8,6 @@ https://downloads.arduino.cc/arduino-1.8.4-windows.exe
 * 느린 경우 
 ```
 https://d.pr/sNDZkh 
-
 ```
 
 
@@ -18,5 +17,5 @@ https://downloads.arduino.cc/arduino-1.8.4-macosx.zip
 ```
 * 느린 경우 
 ```
-https://downloads.arduino.cc/arduino-1.8.4-macosx.zip
+https://d.pr/P71vuk
 ```
