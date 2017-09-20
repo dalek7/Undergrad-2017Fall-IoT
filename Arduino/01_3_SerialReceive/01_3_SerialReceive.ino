@@ -1,4 +1,4 @@
-
+// 받은 것을 다시 보냄
 // the setup function runs once when you press reset or power the board
 void setup() {
   Serial.begin(9600);
