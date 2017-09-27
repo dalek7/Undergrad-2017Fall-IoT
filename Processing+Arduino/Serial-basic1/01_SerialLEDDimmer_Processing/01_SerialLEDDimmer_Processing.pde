@@ -1,5 +1,4 @@
 // 717006 Seung-Chan Kim
-// Works with Arduino project named "01_5_SerialLEDDimmer"
 import processing.serial.*;
 
 Serial myPort; 
