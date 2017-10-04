@@ -25,7 +25,7 @@ void draw() {
     
     if (str1 != null) 
     {
-      print(str1);  // Prints String //<>//
+      //print(str1);  // Prints String //<>//
       float num=float(str1);  // Converts and prints float
       //println(num);
       String buf = String.format("Sensor : %.2f", num); 
