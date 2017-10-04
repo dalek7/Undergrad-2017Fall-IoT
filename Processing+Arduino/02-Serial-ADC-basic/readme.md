@@ -4,6 +4,7 @@
 # Screenshots
 <img src="https://raw.githubusercontent.com/dalek7/Undergrad-2017Fall-IoT/master/Processing%2BArduino/02-Serial-ADC-basic/sketch_171004b_visualization/ScreenShot_01.png" />
 
+<img src="https://raw.githubusercontent.com/dalek7/Undergrad-2017Fall-IoT/master/Processing%2BArduino/02-Serial-ADC-basic/sketch_171004b_visualization/ScreenShot_02.png" />
 # 설명
 한림대학교 사물인터넷개발(717006) 수업자료임
 
