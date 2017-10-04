@@ -9,7 +9,7 @@
 한림대학교 사물인터넷개발(717006) 수업자료임
 
 ## Contact
-Seung-Chan Kim
+* Seung-Chan Kim
 ```
 dalek@hallym.ac.kr
 ```
