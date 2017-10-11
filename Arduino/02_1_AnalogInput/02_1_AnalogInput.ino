@@ -16,5 +16,8 @@ void setup() {
 void loop() {
   // read the value from the sensor:
   sensorValue = analogRead(sensorPin);
-  Serial.println(sensorValue);
+  float sensorVolt = 5.0 * sensorValue / 1024.0;
+  
+  //Serial.println(sensorValue);
+  Serial.println(sensorVolt);
 }
