@@ -1,6 +1,12 @@
 # List of parts
 
 ## Sensors
+### I2C
+* AT42QT1010
+```
+One-channel Touch Sensor IC (Capacitive Touch Sensor)
+https://www.adafruit.com/product/1374
+```
 
 ## Actuators
 
@@ -10,8 +16,11 @@
 ## ETC
 
 ### Potentiometer
-B100K
-
+* B10K
+```
+Rotary Potentiometer - 10k Ohm, Linear
+https://www.sparkfun.com/products/9939
+```
 ### TR
 * BC547
 ``` 
