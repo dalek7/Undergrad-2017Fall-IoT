@@ -1,6 +1,13 @@
 # List of parts
 
 ## Sensors
+
+### Digital Input
+* VS1838B IR SENSOR
+```
+Infrared Frequency: 38kHz HX1838 NEC Code
+```
+
 ### I2C
 * AT42QT1010
 ```
