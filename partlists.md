@@ -8,7 +8,26 @@
 Infrared Frequency: 38kHz HX1838 NEC Code
 ```
 
+### Analog Input
+* Electret Microphone Breakout
+```
+An Electret microphone (100Hz-10kHz) with a 60x mic preamplifier
+https://www.sparkfun.com/products/12758
+```
+
+* MEMS Microphone Breakout - INMP401
+```
+a gain of 67 and more than meets the bandwidth requirements of the mic
+https://www.sparkfun.com/products/9868
+```
+
 ### I2C
+* Si7021 
+```
+Temperature + Humidity Sensor
+https://learn.adafruit.com/adafruit-si7021-temperature-plus-humidity-sensor/overview
+```
+
 * AT42QT1010
 ```
 One-channel Touch Sensor IC (Capacitive Touch Sensor)
