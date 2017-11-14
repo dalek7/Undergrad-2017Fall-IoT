@@ -22,7 +22,7 @@ void setup() {
   // List all the available serial ports
   printArray(Serial.list());
   // Open the port you are using at the rate you want:
-  myPort = new Serial(this, Serial.list()[Serial.list().length-1], 9600);
+  myPort = new Serial(this, Serial.list()[Serial.list().length-1], 115200);
   myPort.clear();
   
 }
@@ -53,7 +53,7 @@ void draw() {
       
       int offset_x1 = 100;
       int offset_y1 = 200;
-      float g = 10;
+      float g = -10; // negative for drawing inversely
       float gx = 2;
       for(int i=0; i<nSample-1; i++)
       {
